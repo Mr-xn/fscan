@@ -17,8 +17,8 @@ jobs:
         go-version: 1.17
     - name: linux Build
       run: |
-        go mod init main
-        go mod tidy
+        #go mod init main
+        #go mod tidy
         go build -o fscan_amd64 -v ./
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.3.1
@@ -42,8 +42,8 @@ jobs:
         go-version: 1.17
     - name: mac Build
       run: |
-        go mod init main
-        go mod tidy
+        #go mod init main
+        #go mod tidy
         go build -o fscan_darwin -v ./
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.3.1
@@ -67,8 +67,8 @@ jobs:
         go-version: 1.17
     - name: Windows Build
       run: |
-        go mod init main
-        go mod tidy
+        #go mod init main
+        #go mod tidy
         go build -o fscan64.exe -v ./
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.3.1
